@@ -4,6 +4,6 @@
   gather_facts: no
 
   tasks:
-    - name: Hello world
-      ansible.builtin.debug:
-        msg: "Hi from Roles"
+  - name: Hello world
+    ansible.builtin.debug:
+      msg: "Hi from Roles"
