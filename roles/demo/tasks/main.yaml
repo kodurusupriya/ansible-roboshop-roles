@@ -1,3 +1,9 @@
-- name: Hello world
-  ansible.builtin.debug:
-    msg: "Hi from Roles"
+- name: Roles Demo
+  hosts: localhost
+  connection: local
+  gather_facts: no
+
+  tasks:
+    - name: Hello world
+      ansible.builtin.debug:
+        msg: "Hi from Roles"
